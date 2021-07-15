@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+   
+  
+    id : <input type="text" id="inputId" > <br>
+    pwd : <input type="password" id="inputPwd"> <br>
+    <button type="button"  onclick="getValueInput()"> 
+      클릭하세요.
+    </button> 
+  
+
+  <script> 
+
+    function getValueInput(){
+        var realid;
+        var realpwd;
+        var inputidValue = document.getElementById("inputId").value;
+        realid = inputidValue;
+        var inputpwdValue = document.getElementById("inputPwd").value;
+        realpwd = inputpwdValue;
+        if (realid == "jhkim" && realpwd == "123"){
+            alert("로그인완료")
+        } else {
+            alert("로그인실패")
+        }
+        }
+    
+  </script> 
+</body> 
+  
+</html> 
