@@ -1,0 +1,65 @@
+<!DOCTYPE html> 
+<html>
+<style type="text/css">
+body {
+  margin : 0;
+}
+
+#header {
+  height : 215px;
+  background: lightgray;
+
+}
+
+#container #left {
+  float : left;
+  min-height: 700px;
+}
+
+#container #right {
+  min-height: 700px;
+}
+#footer {
+  height: 310px;
+  background: darkgray;
+}
+</style>
+<body>
+<div id="wrap">
+  <div id="header">header</div>
+  <hr>
+  <div id="container">
+    <div id="left">left</div>
+    <div id="right">right <br>
+      id : <input type="text" id="inputId" > <br>
+      pwd : <input type="password" id="inputPwd"> <br>
+      <button type="button"  onclick="getValueInput()"> 
+        클릭하세요.
+      </button>
+    </div>
+    
+
+  </div>
+  <hr>
+  <div id="footer">footer</div>
+</div>
+
+  <script> 
+    function getValueInput(){
+        var realid;
+        var realpwd;
+        var inputidValue = document.getElementById("inputId").value;
+        realid = inputidValue;
+        var inputpwdValue = document.getElementById("inputPwd").value;
+        realpwd = inputpwdValue;
+        if (realid == "jhkim" && realpwd == "123"){
+            alert("로그인완료")
+        } else {
+            alert("로그인실패")
+        }
+        }
+  </script> 
+
+</body>
+  
+</html> 
