@@ -1,48 +1,72 @@
 <!DOCTYPE html> 
 <html>
 <style type="text/css">
-body {
-  margin : 0;
-}
-
 #header {
-  height : 215px;
-  background: lightgray;
-
+  top :0;
+  left : 0;
+  right :0;
+  width : 100%;
+  display : flex;
+  height : 75px;
+  background :rgb(99, 187, 27);
+}
+#body {
+}
+nav{
+  width:200px;
+  background-color:#eee;
+  border-right:1px solid #ddd;
+  position : fixed;
+  height: 100%;
+}
+h1 {
+}
+.menu li a {
+  height : 30px;
+  line-height : 30px;
+  display : block;
+  padding : 0 20px;
+  font-size : 12px;
+  background: #555;
+  
 }
 
-#container #left {
-  float : left;
-  min-height: 700px;
-}
-
-#container #right {
-  min-height: 700px;
+#right {
+  background-color :rgb(67, 46, 143);
+  position : relative;
 }
 #footer {
-  height: 310px;
-  background: darkgray;
+  position : absolute;
+  left :0;
+  bottom : 0;
+  width : 100%;
+  background : #707070;
+  padding : 10px 0;
 }
 </style>
+<div id="header">반장창고</div>
+
 <body>
-<div id="wrap">
-  <div id="header">header</div>
-  <hr>
-  <div id="container">
-    <div id="left">left</div>
-    <div id="right">right <br>
+  <nav>
+    <h1>반장창고</h1>
+  <ul class="menu">
+    <li><a href="#">로그인</a></li>
+    <li><a href="#">회원가입</a></li>
+
+  </ul>
+  </nav>
+<div id="right">right</div>
+    <!-- <div id="right">
       id : <input type="text" id="inputId" > <br>
       pwd : <input type="password" id="inputPwd"> <br>
       <button type="button"  onclick="getValueInput()"> 
         클릭하세요.
       </button>
-    </div>
+      right <br>
+    </div> -->
     
 
-  </div>
-  <hr>
   <div id="footer">footer</div>
-</div>
 
   <script> 
     function getValueInput(){
