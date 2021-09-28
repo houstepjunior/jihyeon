@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            width: 800px;
+            border: 1px solid gray;
+        }
+        header{
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+        footer{
+            border-top: 1px solid gray;
+            padding : 20px;
+            text-align: center;
+        }
+        .content{
+            display: flex;
+        }
+        .content nav{
+            border-right: 1px solid gray;
+        }
+        .content aside{
+            border-left: 1px solid gray;
+        }
+        nav,aside{
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>java</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, quia sunt, sequi mollitia ipsum, atque facilis quas dolorem unde illo ut veniam. Optio soluta modi sint consequatur magnam vel voluptate veniam dolorem, placeat facilis necessitatibus, nisi quisquam cupiditate incidunt exercitationem officiis obcaecati iusto tenetur a doloremque! Accusantium deserunt adipisci ea maiores ex? Tempora officia sit veniam accusantium sed ipsa, id doloribus expedita cupiditate fuga esse sapiente perferendis eos inventore, provident tenetur voluptatibus? Dignissimos voluptas aliquid voluptatem laudantium ut obcaecati nulla tempora accusamus minima. Quas, quibusdam est impedit, rem a quam dignissimos praesentium voluptas inventore non debitis ipsam natus. Eaque, assumenda!
+            </main>
+            <aside>
+                ad
+            </aside>
+        </section>
+        <footer>
+            <a href="bjchango.com">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>
